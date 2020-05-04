@@ -1,6 +1,7 @@
 {
-  "name": "semantic-release-test",
-  "version": "1.0.0",
+  "name": "@lgandecki/semantic-release-test",
+  "private": false,
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
