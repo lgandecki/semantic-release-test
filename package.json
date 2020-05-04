@@ -11,7 +11,8 @@
     "build": "npm run build:types && npm run build:js",
     "build:types": "tsc -p tsconfig-build.json",
     "build:js": "babel src --out-dir lib --ignore 'src/**/*.spec.ts','src/**/*.spec.tsx' --extensions \".ts,.tsx\" --source-maps inline ",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest src/",
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx src/"
   },
   "repository": {
     "type": "git",
@@ -33,10 +34,10 @@
     "@typescript-eslint/eslint-plugin": "^2.30.0",
     "@typescript-eslint/parser": "^2.30.0",
     "eslint": "^6.8.0",
-    "eslint-config-airbnb-base": "^14.1.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-prettier": "^3.1.3",
+    "eslint-config-airbnb-typescript": "^7.2.0",
     "jest": "^25.5.4",
     "prettier": "^2.0.5",
     "typescript": "^3.8.3"
